@@ -1,9 +1,9 @@
 "use client"
 import { useTheme } from "next-themes"
 import { useState, useEffect } from 'react'
-import { 
-  Mail, Download, ArrowRight, ChevronDown, ChevronUp, 
-  Terminal, Cpu, Layers, Settings, Send, FileText, Check 
+import {
+  Mail, Download, ArrowRight, ChevronDown, ChevronUp,
+  Terminal, Cpu, Layers, Settings, Send, FileText, Check
 } from 'lucide-react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -421,7 +421,7 @@ export default function Home() {
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
   const [showArch, setShowArch] = useState(false)
-  
+
   // Collapsible experience history
   const [showExtendedExp, setShowExtendedExp] = useState(false)
 
@@ -528,18 +528,18 @@ export default function Home() {
 
   return (
     <div className="min-h-screen relative overflow-x-hidden bg-background text-foreground bg-grid">
-      
+
       {/* HEADER NAVBAR */}
       <header className="fixed top-0 left-0 w-full z-50 border-b border-foreground/10 bg-background/70 backdrop-blur-md">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-          
+
           {/* Logo / Badge */}
-          <div 
-            onClick={() => { setShowArch(false) }} 
+          <div
+            onClick={() => { setShowArch(false) }}
             className="flex items-center gap-2 border border-sky-500/30 dark:border-emerald-500/30 bg-sky-500/10 dark:bg-emerald-500/10 px-3 py-1 rounded-md text-sky-600 dark:text-emerald-400 font-mono text-sm font-semibold select-none cursor-pointer hover:bg-sky-500/20 dark:hover:bg-emerald-500/20 transition-all"
           >
             <div className="h-2 w-2 rounded-full bg-sky-500 dark:bg-emerald-400 animate-pulse" />
-            OliverProductOwner
+            Ohm
           </div>
 
           {/* Desktop Nav */}
@@ -572,7 +572,7 @@ export default function Home() {
             </div>
 
             {/* Language Switcher */}
-            <button 
+            <button
               onClick={() => setIdioma(idioma === 'ES' ? 'EN' : 'ES')}
               className="border border-foreground/10 bg-foreground/5 px-2.5 py-1 rounded text-xs font-mono font-bold hover:bg-foreground/10 transition-colors uppercase"
             >
@@ -580,26 +580,25 @@ export default function Home() {
             </button>
 
             {/* Dark / Light Toggle */}
-            <button 
+            <button
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
               className="border border-foreground/10 bg-foreground/5 p-1.5 rounded hover:bg-foreground/10 transition-colors text-foreground/80"
               title="Toggle theme"
             >
               {theme === "dark" ? (
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="4" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.93 4.93 1.41 1.41" /><path d="m17.66 17.66 1.41 1.41" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.34 17.66-1.41 1.41" /><path d="m19.07 4.93-1.41 1.41" /></svg>
               ) : (
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" /></svg>
               )}
             </button>
 
             {/* </arch> Button */}
-            <button 
+            <button
               onClick={toggleArchView}
-              className={`border font-mono text-xs font-bold px-3 py-1.5 rounded-md transition-all ${
-                showArch 
-                  ? "bg-red-500/10 border-red-500/30 text-red-500 hover:bg-red-500/20" 
+              className={`border font-mono text-xs font-bold px-3 py-1.5 rounded-md transition-all ${showArch
+                  ? "bg-red-500/10 border-red-500/30 text-red-500 hover:bg-red-500/20"
                   : "bg-sky-500/10 border-sky-500/30 text-sky-600 dark:bg-emerald-500/10 dark:border-emerald-500/30 dark:text-emerald-400 hover:scale-105"
-              }`}
+                }`}
             >
               {showArch ? (idioma === 'ES' ? 'PORTAFOLIO' : 'PORTFOLIO') : '</arch>'}
             </button>
@@ -610,10 +609,10 @@ export default function Home() {
 
       {/* VIEW OVERLAY SYSTEM */}
       <AnimatePresence mode="wait">
-        
+
         {/* ARCHITECTURE VIEW */}
         {showArch ? (
-          <motion.div 
+          <motion.div
             key="arch"
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
@@ -645,7 +644,7 @@ export default function Home() {
                       SYSTEM ARCHITECTURE BLUEPRINT
                     </h1>
                   </div>
-                  <button 
+                  <button
                     onClick={() => setShowArch(false)}
                     className="mt-4 md:mt-0 text-xs border border-foreground/20 hover:border-foreground/45 px-3 py-1.5 rounded transition-all"
                   >
@@ -654,7 +653,7 @@ export default function Home() {
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                  
+
                   {/* UI / Client Box */}
                   <div className="bg-card-bg neon-border border p-6 rounded-2xl relative overflow-hidden">
                     <div className="absolute top-0 right-0 p-3 text-sky-500 dark:text-emerald-400 opacity-20">
@@ -752,20 +751,20 @@ export default function Home() {
             )}
           </motion.div>
         ) : (
-          
+
           /* MAIN PORTFOLIO SECTIONS */
-          <motion.div 
+          <motion.div
             key="portfolio"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className="space-y-24"
           >
-            
+
             {/* HERO SECTION */}
             <section id="inicio" className="pt-32 min-h-screen flex flex-col justify-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="space-y-6">
-                
+
                 {/* Available pill */}
                 <div className="inline-flex items-center gap-2 border border-sky-500/20 dark:border-emerald-500/20 bg-sky-500/5 dark:bg-emerald-500/5 px-3 py-1.5 rounded-full text-xs font-mono text-sky-600 dark:text-emerald-400">
                   <span className="inline-block h-2 w-2 rounded-full bg-sky-500 dark:bg-emerald-400 animate-pulse" />
@@ -793,15 +792,15 @@ export default function Home() {
 
                 {/* Primary Actions */}
                 <div className="flex flex-wrap items-center gap-4 pt-4">
-                  <a 
-                    href="#proyectos" 
+                  <a
+                    href="#proyectos"
                     className="flex items-center gap-2 border border-sky-500/30 dark:border-emerald-500/30 bg-sky-500 dark:bg-emerald-400 hover:bg-sky-600 dark:hover:bg-emerald-500 text-background px-6 py-3 rounded-lg font-medium transition-all"
                   >
                     <span>{d.hero.btnProjects}</span>
                     <ArrowRight size={16} />
                   </a>
-                  <a 
-                    href="/Oliver%20Hernandez%20MorenoV4.pdf" 
+                  <a
+                    href="/Oliver%20Hernandez%20MorenoV4.pdf"
                     target="_blank"
                     className="flex items-center gap-2 border border-foreground/10 bg-foreground/5 hover:bg-foreground/10 px-6 py-3 rounded-lg font-medium transition-all text-foreground"
                   >
@@ -812,24 +811,24 @@ export default function Home() {
 
                 {/* Social Badges */}
                 <div className="flex items-center gap-4 pt-6 text-neutral-500 font-mono text-xs">
-                  <a 
-                    href="https://github.com/oliverhernandezmoreno" 
-                    target="_blank" 
+                  <a
+                    href="https://github.com/oliverhernandezmoreno"
+                    target="_blank"
                     className="flex items-center gap-1.5 hover:text-sky-500 dark:hover:text-emerald-400 transition-colors"
                   >
                     <FaGithub size={16} />
                     <span>github</span>
                   </a>
-                  <a 
-                    href="https://www.linkedin.com/in/oliver-hernandez-5134ba22/" 
-                    target="_blank" 
+                  <a
+                    href="https://www.linkedin.com/in/oliver-hernandez-5134ba22/"
+                    target="_blank"
                     className="flex items-center gap-1.5 hover:text-sky-500 dark:hover:text-emerald-400 transition-colors"
                   >
                     <FaLinkedin size={16} />
                     <span>linkedin</span>
                   </a>
-                  <a 
-                    href="mailto:oliverhernandezmoreno@gmail.com" 
+                  <a
+                    href="mailto:oliverhernandezmoreno@gmail.com"
                     className="flex items-center gap-1.5 hover:text-sky-500 dark:hover:text-emerald-400 transition-colors"
                   >
                     <Mail size={16} />
@@ -856,7 +855,7 @@ export default function Home() {
 
             {/* EXPERIENCE / TIMELINE */}
             <section id="experiencia" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 scroll-mt-16">
-              
+
               <div className="mb-12 border-b border-foreground/10 pb-4">
                 <span className="font-mono text-xs text-sky-500 dark:text-emerald-400 uppercase tracking-widest block font-bold">
                   // {d.exp.badge}
@@ -869,7 +868,7 @@ export default function Home() {
 
               {/* Main Timeline Highlights */}
               <div className="space-y-8 relative before:absolute before:left-4 before:top-2 before:bottom-2 before:w-[1px] before:bg-foreground/10 pl-10">
-                
+
                 {/* Loop recent items (Indices 0, 1, 2, 3) */}
                 {d.exp.items.slice(0, 4).map((item, idx) => (
                   <div key={idx} className="relative group">
@@ -889,7 +888,7 @@ export default function Home() {
                         </span>
                       </div>
                       <p className="text-sm text-neutral-500 leading-relaxed">{item.description}</p>
-                      
+
                       {/* Tags */}
                       <div className="flex flex-wrap gap-2 pt-2">
                         {item.tags.map((tag) => (
@@ -905,7 +904,7 @@ export default function Home() {
                 {/* Collapsible Career History Container */}
                 <AnimatePresence>
                   {showExtendedExp && (
-                    <motion.div 
+                    <motion.div
                       initial={{ opacity: 0, height: 0 }}
                       animate={{ opacity: 1, height: "auto" }}
                       exit={{ opacity: 0, height: 0 }}
@@ -931,7 +930,7 @@ export default function Home() {
                               </span>
                             </div>
                             <p className="text-sm text-neutral-500 leading-relaxed">{item.description}</p>
-                            
+
                             {/* Tags */}
                             <div className="flex flex-wrap gap-2 pt-2">
                               {item.tags.map((tag) => (
@@ -964,7 +963,7 @@ export default function Home() {
 
             {/* PROJECTS SECTION */}
             <section id="proyectos" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 scroll-mt-16">
-              
+
               <div className="mb-12 border-b border-foreground/10 pb-4">
                 <span className="font-mono text-xs text-sky-500 dark:text-emerald-400 uppercase tracking-widest block font-bold">
                   // {d.projects.badge}
@@ -1010,7 +1009,7 @@ export default function Home() {
 
             {/* SKILLS SECTION */}
             <section id="skills" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 scroll-mt-16">
-              
+
               <div className="mb-12 border-b border-foreground/10 pb-4">
                 <span className="font-mono text-xs text-sky-500 dark:text-emerald-400 uppercase tracking-widest block font-bold">
                   // {d.skills.badge}
@@ -1022,7 +1021,7 @@ export default function Home() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                
+
                 {/* Management and Development */}
                 <div className="space-y-8">
                   {/* Mgmt Category */}
@@ -1038,8 +1037,8 @@ export default function Home() {
                             <span className="text-neutral-500">{skill.percent}%</span>
                           </div>
                           <div className="h-1.5 w-full bg-foreground/10 rounded-full overflow-hidden">
-                            <div 
-                              className="h-full bg-sky-500 dark:bg-emerald-400 transition-all duration-500" 
+                            <div
+                              className="h-full bg-sky-500 dark:bg-emerald-400 transition-all duration-500"
                               style={{ width: `${skill.percent}%` }}
                             />
                           </div>
@@ -1061,8 +1060,8 @@ export default function Home() {
                             <span className="text-neutral-500">{skill.percent}%</span>
                           </div>
                           <div className="h-1.5 w-full bg-foreground/10 rounded-full overflow-hidden">
-                            <div 
-                              className="h-full bg-sky-500 dark:bg-emerald-400 transition-all duration-500" 
+                            <div
+                              className="h-full bg-sky-500 dark:bg-emerald-400 transition-all duration-500"
                               style={{ width: `${skill.percent}%` }}
                             />
                           </div>
@@ -1087,8 +1086,8 @@ export default function Home() {
                             <span className="text-neutral-500">{skill.percent}%</span>
                           </div>
                           <div className="h-1.5 w-full bg-foreground/10 rounded-full overflow-hidden">
-                            <div 
-                              className="h-full bg-sky-500 dark:bg-emerald-400 transition-all duration-500" 
+                            <div
+                              className="h-full bg-sky-500 dark:bg-emerald-400 transition-all duration-500"
                               style={{ width: `${skill.percent}%` }}
                             />
                           </div>
@@ -1110,8 +1109,8 @@ export default function Home() {
                             <span className="text-neutral-500">{skill.percent}%</span>
                           </div>
                           <div className="h-1.5 w-full bg-foreground/10 rounded-full overflow-hidden">
-                            <div 
-                              className="h-full bg-sky-500 dark:bg-emerald-400 transition-all duration-500" 
+                            <div
+                              className="h-full bg-sky-500 dark:bg-emerald-400 transition-all duration-500"
                               style={{ width: `${skill.percent}%` }}
                             />
                           </div>
@@ -1127,7 +1126,7 @@ export default function Home() {
 
             {/* EDUCATION & CREDENTIALS SECTION */}
             <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-              
+
               <div className="mb-12 border-b border-foreground/10 pb-4">
                 <span className="font-mono text-xs text-sky-500 dark:text-emerald-400 uppercase tracking-widest block font-bold">
                   // {d.edu.badge}
@@ -1139,7 +1138,7 @@ export default function Home() {
               </div>
 
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                
+
                 {/* Degrees */}
                 <div className="bg-card-bg border border-foreground/10 p-6 rounded-2xl space-y-4">
                   <h3 className="font-mono text-sm font-bold border-b border-foreground/10 pb-2 text-sky-500 dark:text-emerald-400 flex items-center gap-2">
@@ -1201,7 +1200,7 @@ export default function Home() {
             <section id="contacto" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 scroll-mt-16 pb-32">
               <div className="bg-card-bg border border-sky-500/20 dark:border-emerald-500/20 p-8 sm:p-12 rounded-[40px] relative overflow-hidden">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 relative z-10">
-                  
+
                   {/* Left Info Column */}
                   <div className="space-y-6">
                     <div>
@@ -1237,14 +1236,14 @@ export default function Home() {
 
                   {/* Right Form Column */}
                   <form onSubmit={handleFormSubmit} className="space-y-4">
-                    
+
                     {/* Name field */}
                     <div className="space-y-1">
                       <label className="block text-xs font-mono text-neutral-500">
                         {idioma === 'ES' ? 'Nombre' : 'Name'}
                       </label>
-                      <input 
-                        type="text" 
+                      <input
+                        type="text"
                         required
                         placeholder={d.contact.formName}
                         value={formState.name}
@@ -1258,8 +1257,8 @@ export default function Home() {
                       <label className="block text-xs font-mono text-neutral-500">
                         {idioma === 'ES' ? 'Correo Electrónico' : 'Email Address'}
                       </label>
-                      <input 
-                        type="email" 
+                      <input
+                        type="email"
                         required
                         placeholder={d.contact.formEmail}
                         value={formState.email}
@@ -1273,7 +1272,7 @@ export default function Home() {
                       <label className="block text-xs font-mono text-neutral-500">
                         {idioma === 'ES' ? 'Mensaje' : 'Message'}
                       </label>
-                      <textarea 
+                      <textarea
                         required
                         rows={4}
                         placeholder={d.contact.formMsg}
@@ -1284,7 +1283,7 @@ export default function Home() {
                     </div>
 
                     {/* Submit Button */}
-                    <button 
+                    <button
                       type="submit"
                       disabled={formStatus === 'sending'}
                       className="w-full flex items-center justify-center gap-2 border border-sky-500/30 dark:border-emerald-500/30 bg-sky-500 dark:bg-emerald-400 hover:bg-sky-600 dark:hover:bg-emerald-500 text-background px-6 py-3.5 rounded-lg text-xs font-mono font-bold transition-all disabled:opacity-50"
