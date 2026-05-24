@@ -1,0 +1,152 @@
+Oliver Hernandez Moreno
+Business Analyst | AI & DevOps | Technical Product Owner | Project Manager
+
+Contacto: oliverhernandezmoreno@gmail.com | +56997456818
+LinkedIn : https://www.linkedin.com/in/oliver-hernandez-5134ba22/
+GitHub : https://github.com/oliverhernandezmoreno
+
+1. RESUMEN EJECUTIVO
+Ingeniero en computación e informática con más de 17 años de experiencia
+liderando iniciativas tecnológicas y conectando necesidades de negocio con soluciones
+técnicas de alto impacto. Especializado en gestión de productos, metodologías ágiles y
+coordinación entre stakeholders, equipos de desarrollo y áreas estratégicas.
+Cuenta con experiencia en industrias como minería, finanzas, sustentabilidad y sector
+público, combinando visión de negocio con una sólida base técnica en arquitectura
+backend, DevOps y delivery de productos digitales. Scrum Master Certified, orientado a
+optimizar el time-to-market, mejorar procesos y asegurar entregas de valor medible.
+
+2. DESTACADO DE IMPACTO CUANTIFICABLE
+LOGRO ESTRATÉGICO EN GESTIÓN DE PRODUCTO "Reducción del 25% en los
+tiempos de implementación" Durante su liderazgo como Product Owner en el Programa
+Tranque de Fundación Chile, Optimize el cumplimiento de entregas críticas mediante la
+priorización estratégica del backlog (Frameworks RICE, MoSCoW y WSJF ). Este hito se
+logró mediante una gestión experta de proveedores externos ( INFOSYS ) y la alineación
+técnica con las áreas internas de TI, asegurando la escalabilidad del producto.
+
+3. STACK TECNOLÓGICO Y COMPETENCIAS CORE
+●​ Gestión y Metodologías: Scrum Master Certified, Business Analyst (BA), Product
+Owner (PO), INVEST, 3C, RICE, WSJF, Project Management, BPMN 2.0 (Bizagi,
+Miro), jira , Confluence, SDD (Spec-Driven Development), Gestión de Riesgos y
+SLAs.
+●​ Desarrollo Backend y Arquitectura: GoLang, Python, C#, Java, PHP, SpringBoot,
+.NET Core, Arquitectura DDD (Domain-Driven Design), Microservicios, APIs REST
+(Swagger), S.O.L.I.D., Patrones de Diseño, SQL Server, PostgreSQL, Oracle,
+NoSQL.
+●​ DevOps, Cloud e IA: Docker, Kubernetes, Terraform (IaC), CI/CD (GitLab/GitHub),
+Azure, AWS, Monitoreo (Prometheus, Grafana, ELK), y uso avanzado de Agentes de
+IA para ingeniería de software ( Claude Code, Notebook LM, ChatGPT ).
+
+4. TRAYECTORIA PROFESIONAL DETALLADA
+Business Analyst | IMED
+Marzo 2026 - Abril 2026
+●​ Proyecto: Motor Middleware Bono Electrónico.
+●​ Documentación y análisis de procesos legacy para la transición hacia nuevos
+orquestadores y adaptadores.
+●​ Diseño de mallas de servicio y diagramas de secuencia para asegurar la trazabilidad
+del software.
+●​ Aplicación de agentes de IA para el procesamiento de archivos técnicos y
+generación de diagramas.
+●​ Logros: Mejora de trazabilidad y entendimiento funcional entre áreas técnicas y
+negocio. Elabore una documentación precisa del producto Motor middleware para el
+area de innovacion y desarrollo
+CEO | Viral Buy
+Febrero 2025 - Febrero 2026
+●​ Experiencia en gestión de tiendas ecommerce bajo modelo Dropshipping
+●​ Creación de imagen corporativa.
+●​ Investigación de productos, administración de proveedores, creación de campañas
+publicitarias y optimización de ventas online.
+●​ Manejo de plataformas como Shopify, Woocomerces, Wordpress
+●​ Estrategias de marketing digital en Meta Ads y TikTok Ads.
+●​ Experiencia en análisis de métricas, atención al cliente, gestión de pedidos y mejora
+de conversiones para maximizar rentabilidad y escalabilidad del negocio digital.
+●​ Logros: Incrementé las ventas y rentabilidad de la tienda ecommerce mediante la
+optimización de campañas publicitarias, selección estratégica de productos y
+automatización de procesos de gestión de pedidos y atención al cliente.
+Business Analyst / Product Owner / DevOps Engineer | FUNDACIÓN CHILE
+Mayo 2020 - Febrero 2025
+●​ Business Analyst (Oracle NetSuite): Lideró la transición de SAP a Oracle
+NetSuite. Mapeó flujos críticos (Ventas, Compras, Proyectos, Contabilidad) usando
+BPMN 2.0 y gestionó la integración con sistemas internos.
+●​ Product Owner (Sustentabilidad): Gestionó el backlog para el "Programa
+Tranque", coordinando requerimientos con stakeholders de mineras de clase
+mundial ( Pelambres, Ovejeria ) y SERNAGEOMIN .
+●​ DevOps Engineer: Evolucionó el MVP del "Sistema Global de Monitoreo".
+Implementó infraestructura como código ( Terraform ), orquestación en Kubernetes
+sobre Azure y automatización de pipelines CI/CD.
+●​ Logros: Optimización de procesos críticos y alineación SAP → Oracle NetSuite.​
+Mejora de eficiencia operativa mediante automatización y redefinición de flujos.
+Implementación de buenas prácticas QA + DevOps. Mejora de trazabilidad entre
+requerimientos, pruebas y despliegues. Implementación exitosa Sistema global de
+monitoreo entregado a SERNAGEOMIN. Mejora de estabilidad y automatización
+operacional.​ ​
+​
+
+Arquitecto de Soluciones Senior | PGA GROUP
+Septiembre 2019 - Enero 2020
+●​ Diseño de arquitecturas robustas bajo principios S.O.L.I.D. y desarrollo backend
+utilizando SpringBoot .
+●​ Estructuración de modelos de datos complejos y documentación técnica avanzada
+mediante Swagger .
+●​ Logros:Implementación backend con microservicios para programa Bodas de Oro.
+Mejora de estabilidad y automatización operacional.
+Scrum Master | GENESYS
+Marzo 2019 - Julio 2019
+●​ Liderazgo y facilitación de la célula ágil para el proyecto "Huella Digital" .
+●​ Fomento de metodologías ágiles y colaboración remota/híbrida mediante Miro y
+Slack.
+Analista Desarrollador Senior | SEIDOR
+Octubre 2018 - Marzo 2019
+●​ Sector Público (MINVU): Desarrollo del sistema de dictámenes jurisprudenciales y
+portal de postulación vía internet (C#, SQL Server, PHP).
+●​ Superintendencia de Insolvencia: Implementación de la plataforma de
+procedimientos de quiebras para personas naturales, integrando el sistema con
+Clave Única nacional utilizando J2EE, AngularJs y JBPM 6.5 .
+●​ Migración Middleware: Ejecutó la migración crítica de Oracle Service Bus ( OSB
+10 a 12c ), refactorizando pipelines y transformaciones XQuery/XSLT para optimizar
+la performance.
+●​ Logros: Migración crítica con mínima afectación operativa. Mejora de performance y
+mantenibilidad de servicios.
+Trayectoria de Liderazgo y Arquitectura | INDRA
+Mayo 2008 - Junio 2018
+●​ Banco Central de Chile: Lideró el proyecto ALADI para la administración del
+Convenio de Pagos y Créditos Recíprocos, utilizando UML y Enterprise Architect
+para el control de riesgos.
+●​ Ministerio de Salud (MINSAL): Arquitecto del proyecto SISQ , diseñando el
+cuadro de mando nacional bajo arquitectura DDD basada en C# y Oracle.
+●​ Grandes Clientes (LAN Chile, SKY, ENEL, MAPFRE): Evolución desde Analista
+Funcional hasta Arquitecto y Jefe de Proyectos. Responsable de cubicaciones de
+tiempos, diseño de microservicios y optimización de sitios de alto tráfico.
+●​ Hito Transversal: Seguridad Informática: Implementación de estándares de
+seguridad-por-diseño en proyectos para BBVA, SURA y FORUM, incluyendo cifrado
+de llaves simétricas/asimétricas, encriptación MD5 y Base64.
+●​ Logros: 3er Lugar en campeonato de innovación (Sistema de gestión municipal).
+Liderazgo de múltiples iniciativas críticas sector público y financiero.
+Implementaciones de arquitecturas escalables y orientadas a servicios.
+Implementación en .Net y Java
+
+Experiencia Temprana (Blue-Chip & Sector Público)
+Junio 2002 - Mayo 2007
+●​ Orion-DS / Atento: Ingeniero de Software para soluciones SharePoint e intranets
+de gestión documental en cuentas de alta visibilidad como ING y Cencosud
+(Creación de roles y perfiles SAP R/3).
+●​ GlobalConnect / Ministerio de Vivienda: Desarrollo de mantenedores y reportes
+de gestión (PHP, PostgreSQL, .NET). Gestión de procesos bajo modelos de calidad
+CMM Nivel 1 y 2.
+●​ Empresas Santa Elena: Liderazgo de personal y gestión de datos geográficos con
+GPS Garmin y ArcView.
+
+5. EDUCACIÓN Y FORMACIÓN CONTINUA
+●​ Ingeniería de Ejecución en Computación e Informática , Instituto Profesional Dr.
+Virginio Gómez (Universidad de Concepción).
+●​ Diplomado en Gestión de Proyectos TI , DUOC UC (2014).Certificaciones
+Destacadas:
+●​ Scrum Master Certified: ScrumStudy (ID: 865890).
+●​ Microsoft Certified Technology Specialist (MCTS): SharePoint Portal Server
+Infrastructure.
+●​ Coaching & Liderazgo: Programa de formación ejecutiva (>200 horas), Indra.
+
+6. INFORMACIÓN COMPLEMENTARIA
+●​ Idiomas: Inglés (Nivel B1 - Intermedio) | Español (Nativo).
+●​ Ubicación: Región del Ñuble / Santiago, Chile (Disponibilidad híbrida/remota).
+
+
