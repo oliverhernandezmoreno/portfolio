@@ -394,6 +394,8 @@ const SKILLS_DATA = [
   { name: "Product Backlog (PO)", percent: 88, category: "mgmt" },
   { name: "BPMN 2.0 (Bizagi/Miro)", percent: 85, category: "mgmt" },
   { name: "Project Management", percent: 80, category: "mgmt" },
+  { name: "Jira", percent: 80, category: "mgmt" },
+  { name: "Confluence", percent: 80, category: "mgmt" },
   // Dev
   { name: "GoLang", percent: 75, category: "dev" },
   { name: "Python", percent: 82, category: "dev" },
@@ -596,8 +598,8 @@ export default function Home() {
             <button
               onClick={toggleArchView}
               className={`border font-mono text-xs font-bold px-3 py-1.5 rounded-md transition-all ${showArch
-                  ? "bg-red-500/10 border-red-500/30 text-red-500 hover:bg-red-500/20"
-                  : "bg-sky-500/10 border-sky-500/30 text-sky-600 dark:bg-emerald-500/10 dark:border-emerald-500/30 dark:text-emerald-400 hover:scale-105"
+                ? "bg-red-500/10 border-red-500/30 text-red-500 hover:bg-red-500/20"
+                : "bg-sky-500/10 border-sky-500/30 text-sky-600 dark:bg-emerald-500/10 dark:border-emerald-500/30 dark:text-emerald-400 hover:scale-105"
                 }`}
             >
               {showArch ? (idioma === 'ES' ? 'PORTAFOLIO' : 'PORTFOLIO') : '</arch>'}
