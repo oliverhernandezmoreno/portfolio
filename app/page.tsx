@@ -23,7 +23,7 @@ const DICT = {
       badge: "Disponible para proyectos híbridos y remotos",
       greeting: "Hola, soy",
       name: "Oliver Hernández",
-      description: "Ingeniero en Computación e Informática y Scrum Master con más de 17 años de experiencia conectando necesidades de negocio con soluciones tecnológicas de alto impacto. Especializado en DevOps, Arquitectura Backend e IA para ingeniería de software.",
+      description: "Product Owner / Business Analyst Senior con más de 17 años de experiencia liderando proyectos tecnológicos y de transformación digital en minería, banca, salud y sector público. Especialista en conectar negocio y tecnología, gestionando productos digitales, automatización de procesos, integraciones API y equipos ágiles multidisciplinarios. Experiencia en ERP Oracle NetSuite, DevOps, cloud, BPMN 2.0 y arquitectura de soluciones, logrando mejoras de hasta 25% en tiempos de implementación y optimización operacional. Perfil estratégico, técnico y orientado a resultados, con rápida adaptación y foco en entrega de valor inmediato.Ingeniero en Computación e Informática y Scrum Master con más de 17 años de experiencia conectando necesidades de negocio con soluciones tecnológicas de alto impacto. Especializado en DevOps, Arquitectura Backend e IA para ingeniería de software.",
       btnProjects: "Ver proyectos",
       btnCV: "Descargar CV",
       metrics: [
