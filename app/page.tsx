@@ -428,7 +428,7 @@ export default function Home() {
   const [showExtendedExp, setShowExtendedExp] = useState(false)
 
   // Typing animation states
-  const roles = ['Business Analyst', 'AI & DevOps', 'Technical Product Owner', 'Project Manager']
+  const roles = ['Product Owner', 'Business Analyst', 'AI & DevOps', 'Project Manager']
   const [roleIndex, setRoleIndex] = useState(0)
   const [currentText, setCurrentText] = useState('')
   const [isDeleting, setIsDeleting] = useState(false)
