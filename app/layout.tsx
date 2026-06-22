@@ -3,7 +3,7 @@ import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Oliver Hernandez Moreno | Business Analyst, AI & DevOps, Technical Product Owner",
+  title: "Oliver Hernandez Moreno | Business Analyst, AI & DevOps, Product Owner",
   description: "Bilingual professional portfolio. Specializing in Product Management, DevOps, Cloud Infrastructure & Backend Architecture.",
 };
 
