@@ -15,7 +15,7 @@
 html.dark {
   --background: #060608;
   --foreground: #f1f5f9;
-  --grid-color: rgba(0, 229, 153, 0.05); /* Neon green grid */
+  --grid-color: rgba(0, 183, 255, 0.055); /* Soft cyan grid */
   --accent: 0, 229, 153; /* Cyber green rgb */
   --accent-secondary: 6, 182, 212; /* Cyan */
   --card-bg: rgba(13, 13, 17, 0.7);
@@ -44,7 +44,7 @@ body {
   background-image:
     linear-gradient(var(--grid-color) 1px, transparent 1px),
     linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
-  background-size: 50px 50px;
+  background-size: 37.5px 37.5px;
 }
 
 /* Custom glow effects */

@@ -28,7 +28,7 @@ export default function Home() {
 
   return (
     <main className="relative min-h-screen overflow-x-hidden bg-[#020405] text-[#f5f7fb]">
-      <div className="fixed inset-0 z-0 bg-[linear-gradient(rgba(0,183,255,0.075)_1px,transparent_1px),linear-gradient(90deg,rgba(0,183,255,0.075)_1px,transparent_1px)] bg-[size:37.5px_37.5px]" />
+      <div className="bg-grid fixed inset-0 z-0 opacity-95" />
       <div className="fixed inset-0 z-0 bg-[radial-gradient(circle_at_34%_45%,rgba(0,163,255,0.055),transparent_34%)]" />
 
       <header className="fixed left-0 top-0 z-50 w-full border-b border-white/[0.08] bg-[#050607]/95">
