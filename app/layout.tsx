@@ -3,9 +3,9 @@ import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Oliver Hernandez Moreno | Product Owner",
+  title: "Oliver Hernandez Moreno | Product Owner | Business Analyst | AI & DevOps",
   description:
-    "Portfolio profesional de Oliver Hernandez Moreno, Product Owner especializado en productos digitales, procesos e integraciones.",
+    "Portfolio profesional de Oliver Hernandez Moreno, Product Owner, Business Analyst y especialista en IA & DevOps.",
 };
 
 export default function RootLayout({
