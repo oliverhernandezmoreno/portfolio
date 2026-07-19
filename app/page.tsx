@@ -6,7 +6,7 @@ import { useTheme } from "next-themes";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const profileText =
-  "Product Owner / Business Analyst Senior con más de 17 años de experiencia liderando proyectos tecnológicos y de transformación digital en minería, banca, salud y sector público. Especialista en conectar negocio y tecnología, gestionando productos digitales, automatización de procesos, integraciones API y equipos ágiles multidisciplinarios. Experiencia en ERP Oracle NetSuite, DevOps, cloud, BPMN 2.0 y arquitectura de soluciones, logrando mejoras de hasta 25% en tiempos de implementación y optimización operacional. Perfil estratégico, técnico y orientado a resultados, con rápida adaptación y foco en entrega de valor inmediato";
+  "Product Owner / Business Analyst Senior más de 17 años de experiencia liderando proyectos tecnológicos y de transformación digital en minería, banca, salud y sector público. Especialista en conectar negocio y tecnología, gestionando productos digitales, automatización de procesos, integraciones API y equipos ágiles multidisciplinarios. Experiencia en ERP Oracle NetSuite, DevOps, cloud, BPMN 2.0 y arquitectura de soluciones, logrando mejoras de hasta 25% en tiempos de implementación y optimización operacional. Perfil estratégico, técnico y orientado a resultados, con rápida adaptación y foco en entrega de valor inmediato";
 
 export default function Home() {
   const [language, setLanguage] = useState<"ES" | "EN">("ES");
@@ -82,7 +82,7 @@ export default function Home() {
               {darkTheme ? <Sun size={12} /> : <Moon size={12} />}
             </button>
             <a
-              href="#contacto"
+              href="oliverhernandezmoreno@gmail.com"
               className="h-[22px] rounded-[4px] border border-sky-500/45 bg-sky-500/10 px-2 py-[4px] text-[10px] font-bold text-sky-400 transition hover:bg-sky-500/20"
             >
               &lt;/arch&gt;

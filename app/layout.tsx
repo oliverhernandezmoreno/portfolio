@@ -16,9 +16,9 @@ export default function RootLayout({
   return (
     <html lang="es" suppressHydrationWarning>
       <body>
-        <ThemeProvider 
-          attribute="class" 
-          defaultTheme="dark" 
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
           enableSystem={false}
         >
           {children}
