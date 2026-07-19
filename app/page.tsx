@@ -802,7 +802,7 @@ export default function Home() {
                     <ArrowRight size={16} />
                   </a>
                   <a
-                    href="/Oliver%20Hernandez%20MorenoV4.pdf"
+                    href="/OLIVER%20HERN%C3%81NDEZ%20MORENO%20-%20PRODUCT%20OWNER.pdf"
                     target="_blank"
                     className="flex items-center gap-2 border border-foreground/10 bg-foreground/5 hover:bg-foreground/10 px-6 py-3 rounded-lg font-medium transition-all text-foreground"
                   >
