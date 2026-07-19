@@ -29,7 +29,7 @@ const DICT = {
       metrics: [
         { value: "17+", label: "Años de experiencia TI" },
         { value: "DevOps & IA", label: "DevOps, Cloud & IA Stack" },
-        { value: "Scrum Certified", label: "Technical PO & BA" }
+        { value: "Scrum Certified", label: "Product Owner & BA" }
       ]
     },
     exp: {
@@ -216,7 +216,7 @@ const DICT = {
       metrics: [
         { value: "17+", label: "Years in IT Industry" },
         { value: "DevOps & AI", label: "DevOps, Cloud & AI Stack" },
-        { value: "Scrum Certified", label: "Technical PO & BA" }
+        { value: "Scrum Certified", label: "Product Owner & BA" }
       ]
     },
     exp: {
