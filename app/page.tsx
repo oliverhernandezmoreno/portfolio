@@ -403,18 +403,30 @@ const SKILLS_DATA = [
   { name: "Java / SpringBoot", percent: 80, category: "dev" },
   { name: "DDD / Microservices", percent: 88, category: "dev" },
   { name: "REST APIs (Swagger)", percent: 90, category: "dev" },
+  { name: "Spec-Driven Development (Desarrollo Guiado por Especificaciones)", percent: 88, category: "dev" },
+  { name: "Design Thinking", percent: 85, category: "dev" },
+  { name: "Lean UX", percent: 82, category: "dev" },
+  { name: "Codex", percent: 80, category: "dev" },
+  { name: "Claude Code", percent: 88, category: "dev" },
+  { name: "Open Code", percent: 80, category: "dev" },
   // DevOps
   { name: "Docker & Kubernetes", percent: 88, category: "devops" },
   { name: "Terraform (IaC)", percent: 82, category: "devops" },
   { name: "CI/CD (GitLab/GitHub)", percent: 90, category: "devops" },
   { name: "AWS & Azure Cloud", percent: 80, category: "devops" },
   { name: "OpenTelemetry / Grafana", percent: 82, category: "devops" },
-  { name: "AI Agents (Claude Code)", percent: 85, category: "devops" },
+  { name: "AI Agents (Claude Code, Codex, Hermes)", percent: 85, category: "devops" },
   // Soft
   { name: "Team Leadership", percent: 90, category: "soft" },
   { name: "Problem Solving", percent: 92, category: "soft" },
   { name: "Communication", percent: 88, category: "soft" },
-  { name: "Strategic Alignment", percent: 86, category: "soft" }
+  { name: "Strategic Alignment", percent: 86, category: "soft" },
+  { name: "Liderazgo de equipos multidisciplinarios", percent: 92, category: "soft" },
+  { name: "Negociación y gestión de expectativas", percent: 90, category: "soft" },
+  { name: "Comunicación entre negocio y tecnología", percent: 94, category: "soft" },
+  { name: "Toma de decisiones basada en datos", percent: 88, category: "soft" },
+  { name: "Gestión de riesgos", percent: 85, category: "soft" },
+  { name: "Pensamiento analítico", percent: 92, category: "soft" }
 ]
 
 export default function Home() {
