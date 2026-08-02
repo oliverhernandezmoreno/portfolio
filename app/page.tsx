@@ -447,7 +447,7 @@ export default function Home() {
 
   // Contact form submission simulated feedback
   const [formState, setFormState] = useState({ name: '', email: '', message: '' })
-  const [formStatus, setFormStatus] = useState<'idle' | 'sending' | 'success'>('idle')
+  const [formStatus, setFormStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
 
   // Terminal boot animation states
   const [booting, setBooting] = useState(false)
@@ -528,11 +528,26 @@ export default function Home() {
     e.preventDefault()
     if (!formState.name || !formState.email || !formState.message) return
     setFormStatus('sending')
-    setTimeout(() => {
-      setFormStatus('success')
-      setFormState({ name: '', email: '', message: '' })
-      setTimeout(() => setFormStatus('idle'), 5000)
-    }, 1500)
+    fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formState)
+    })
+      .then(async (res) => {
+        if (res.ok) {
+          setFormStatus('success')
+          setFormState({ name: '', email: '', message: '' })
+        } else {
+          setFormStatus('error')
+        }
+        setTimeout(() => setFormStatus('idle'), 5000)
+      })
+      .catch(() => {
+        setFormStatus('error')
+        setTimeout(() => setFormStatus('idle'), 5000)
+      })
   }
 
   // Toggle architecture view
@@ -1310,6 +1325,11 @@ export default function Home() {
                     {formStatus === 'success' && (
                       <div className="font-mono text-[10px] text-sky-500 dark:text-emerald-400 border border-sky-500/20 dark:border-emerald-500/20 bg-sky-500/5 dark:bg-emerald-500/5 p-3 rounded-md animate-pulse">
                         [SYSTEM]: {d.contact.successMsg}
+                      </div>
+                    )}
+                    {formStatus === 'error' && (
+                      <div className="font-mono text-[10px] text-red-500 border border-red-500/20 bg-red-500/5 p-3 rounded-md animate-pulse">
+                        [SYSTEM ERROR]: {idioma === 'ES' ? 'Ocurrió un error al enviar el mensaje. Por favor intenta de nuevo.' : 'An error occurred while sending the message. Please try again.'}
                       </div>
                     )}
 
