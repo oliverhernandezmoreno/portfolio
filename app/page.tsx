@@ -557,6 +557,10 @@ export default function Home() {
 
   return (
     <div className="min-h-screen relative overflow-x-hidden bg-background text-foreground bg-grid">
+      {/* Decorative background Aurora Blobs */}
+      <div className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] bg-sky-500/5 dark:bg-emerald-500/5 rounded-full blur-[120px] pointer-events-none -z-10 animate-pulse" style={{ animationDuration: '8s' }} />
+      <div className="absolute top-[40%] right-[-10%] w-[45vw] h-[45vw] bg-sky-500/5 dark:bg-emerald-500/5 rounded-full blur-[120px] pointer-events-none -z-10 animate-pulse" style={{ animationDuration: '12s' }} />
+      <div className="absolute bottom-[-10%] left-[20%] w-[50vw] h-[50vw] bg-sky-500/5 dark:bg-emerald-500/5 rounded-full blur-[150px] pointer-events-none -z-10 animate-pulse" style={{ animationDuration: '10s' }} />
 
       {/* HEADER NAVBAR */}
       <header className="fixed top-0 left-0 w-full z-50 border-b border-foreground/10 bg-background/70 backdrop-blur-md">
@@ -684,7 +688,7 @@ export default function Home() {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
                   {/* UI / Client Box */}
-                  <div className="bg-card-bg neon-border border p-6 rounded-2xl relative overflow-hidden">
+                  <div className="glass-panel p-6 rounded-2xl relative overflow-hidden">
                     <div className="absolute top-0 right-0 p-3 text-sky-500 dark:text-emerald-400 opacity-20">
                       <Layers size={40} />
                     </div>
@@ -701,7 +705,7 @@ export default function Home() {
                   </div>
 
                   {/* DevOps & AI Agents Box */}
-                  <div className="bg-card-bg neon-border border p-6 rounded-2xl relative overflow-hidden">
+                  <div className="glass-panel p-6 rounded-2xl relative overflow-hidden">
                     <div className="absolute top-0 right-0 p-3 text-sky-500 dark:text-emerald-400 opacity-20">
                       <Cpu size={40} />
                     </div>
@@ -718,7 +722,7 @@ export default function Home() {
                   </div>
 
                   {/* Backend & Architecture Box */}
-                  <div className="bg-card-bg neon-border border p-6 rounded-2xl relative overflow-hidden">
+                  <div className="glass-panel p-6 rounded-2xl relative overflow-hidden">
                     <div className="absolute top-0 right-0 p-3 text-sky-500 dark:text-emerald-400 opacity-20">
                       <Settings size={40} />
                     </div>
@@ -737,7 +741,7 @@ export default function Home() {
                 </div>
 
                 {/* Workflow lifecycle diagram */}
-                <div className="bg-card-bg border border-foreground/10 p-6 rounded-2xl">
+                <div className="glass-panel p-6 rounded-2xl">
                   <h3 className="text-sm font-bold border-b border-foreground/10 pb-2 mb-4 flex items-center gap-2">
                     <Terminal size={16} className="text-sky-500 dark:text-emerald-400" />
                     <span>04 // {d.arch.modules.workflow}</span>
@@ -906,7 +910,7 @@ export default function Home() {
                       <div className="h-2 w-2 rounded-full bg-sky-500 dark:bg-emerald-400" />
                     </div>
 
-                    <div className="bg-card-bg neon-border border p-6 rounded-2xl space-y-3">
+                    <div className="glass-panel p-6 rounded-2xl space-y-3">
                       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                         <div>
                           <h3 className="text-lg font-bold text-foreground">{item.role}</h3>
@@ -948,7 +952,7 @@ export default function Home() {
                             <div className="h-2 w-2 rounded-full bg-sky-500 dark:bg-emerald-400" />
                           </div>
 
-                          <div className="bg-card-bg neon-border border p-6 rounded-2xl space-y-3">
+                          <div className="glass-panel p-6 rounded-2xl space-y-3">
                             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                               <div>
                                 <h3 className="text-lg font-bold text-foreground">{item.role}</h3>
@@ -1005,7 +1009,7 @@ export default function Home() {
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {d.projects.items.map((project, idx) => (
-                  <div key={idx} className="bg-card-bg neon-border border p-6 rounded-3xl flex flex-col justify-between hover:-translate-y-1 transition-all">
+                  <div key={idx} className="glass-panel p-6 rounded-3xl flex flex-col justify-between">
                     <div className="space-y-4">
                       <div>
                         <span className="block text-[10px] font-mono uppercase tracking-wider text-sky-500 dark:text-emerald-400 font-bold">
@@ -1067,7 +1071,7 @@ export default function Home() {
                           </div>
                           <div className="h-1.5 w-full bg-foreground/10 rounded-full overflow-hidden">
                             <div
-                              className="h-full bg-sky-500 dark:bg-emerald-400 transition-all duration-500"
+                              className="h-full bg-gradient-to-r from-sky-500 to-emerald-400 dark:from-sky-400 dark:to-emerald-400 transition-all duration-500 shadow-[0_0_8px_rgba(52,211,153,0.3)]"
                               style={{ width: `${skill.percent}%` }}
                             />
                           </div>
@@ -1090,7 +1094,7 @@ export default function Home() {
                           </div>
                           <div className="h-1.5 w-full bg-foreground/10 rounded-full overflow-hidden">
                             <div
-                              className="h-full bg-sky-500 dark:bg-emerald-400 transition-all duration-500"
+                              className="h-full bg-gradient-to-r from-sky-500 to-emerald-400 dark:from-sky-400 dark:to-emerald-400 transition-all duration-500 shadow-[0_0_8px_rgba(52,211,153,0.3)]"
                               style={{ width: `${skill.percent}%` }}
                             />
                           </div>
@@ -1116,7 +1120,7 @@ export default function Home() {
                           </div>
                           <div className="h-1.5 w-full bg-foreground/10 rounded-full overflow-hidden">
                             <div
-                              className="h-full bg-sky-500 dark:bg-emerald-400 transition-all duration-500"
+                              className="h-full bg-gradient-to-r from-sky-500 to-emerald-400 dark:from-sky-400 dark:to-emerald-400 transition-all duration-500 shadow-[0_0_8px_rgba(52,211,153,0.3)]"
                               style={{ width: `${skill.percent}%` }}
                             />
                           </div>
@@ -1139,7 +1143,7 @@ export default function Home() {
                           </div>
                           <div className="h-1.5 w-full bg-foreground/10 rounded-full overflow-hidden">
                             <div
-                              className="h-full bg-sky-500 dark:bg-emerald-400 transition-all duration-500"
+                              className="h-full bg-gradient-to-r from-sky-500 to-emerald-400 dark:from-sky-400 dark:to-emerald-400 transition-all duration-500 shadow-[0_0_8px_rgba(52,211,153,0.3)]"
                               style={{ width: `${skill.percent}%` }}
                             />
                           </div>
@@ -1169,7 +1173,7 @@ export default function Home() {
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
                 {/* Degrees */}
-                <div className="bg-card-bg border border-foreground/10 p-6 rounded-2xl space-y-4">
+                <div className="glass-panel p-6 rounded-2xl space-y-4">
                   <h3 className="font-mono text-sm font-bold border-b border-foreground/10 pb-2 text-sky-500 dark:text-emerald-400 flex items-center gap-2">
                     <FileText size={16} />
                     <span>{d.edu.diplomas}</span>
@@ -1188,7 +1192,7 @@ export default function Home() {
                 </div>
 
                 {/* Certifications */}
-                <div className="bg-card-bg border border-foreground/10 p-6 rounded-2xl space-y-4">
+                <div className="glass-panel p-6 rounded-2xl space-y-4">
                   <h3 className="font-mono text-sm font-bold border-b border-foreground/10 pb-2 text-sky-500 dark:text-emerald-400 flex items-center gap-2">
                     <Check size={16} />
                     <span>{d.edu.certs}</span>
@@ -1204,7 +1208,7 @@ export default function Home() {
                 </div>
 
                 {/* Languages */}
-                <div className="bg-card-bg border border-foreground/10 p-6 rounded-2xl space-y-4">
+                <div className="glass-panel p-6 rounded-2xl space-y-4">
                   <h3 className="font-mono text-sm font-bold border-b border-foreground/10 pb-2 text-sky-500 dark:text-emerald-400 flex items-center gap-2">
                     <Terminal size={16} />
                     <span>{d.edu.lang}</span>
